@@ -1,0 +1,18 @@
+<app-header>サインイン</app-header>
+
+<main class="main">
+
+    <app-user-id class="main__forms user-id"
+                 [form]="userIdForm"></app-user-id>
+    <app-password class="main__forms password"
+                  [form]="passwordForm"></app-password>
+
+</main>
+
+<footer class="footer">
+    <button class="footer__button"
+            mat-flat-button
+            color="primary"
+            (click)="signUp()"
+            [disabled]="formGroup.invalid">サインイン</button>
+</footer>

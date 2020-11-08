@@ -1,0 +1,7 @@
+<mat-form-field class="field" appearance="outline">
+    <mat-label>User ID</mat-label>
+    <input [formControl]="form" matInput placeholder="User ID" [errorStateMatcher]="errorMatcher">
+    <mat-hint>14文字まで</mat-hint>
+    <mat-error *ngIf="form.hasError('required')">必須項目です。</mat-error>
+    <mat-error *ngIf="form.hasError('maxlength')">最大文字数は14文字です。</mat-error>
+</mat-form-field>
