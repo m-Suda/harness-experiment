@@ -29,5 +29,6 @@ module.exports = {
         'class-methods-use-this': 'off',
         'lines-between-class-members': 'off',
         'max-classes-per-file': 'off',
+        'no-underscore-dangle': 'off',
     },
 };
