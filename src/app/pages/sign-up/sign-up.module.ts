@@ -6,8 +6,12 @@ import { UserIdModule } from '../../shared/forms/user-id/user-id.module';
 import { PasswordModule } from '../../shared/forms/password/password.module';
 import { HeaderModule } from '../../shared/header/header.module';
 
+const components = [SignUpComponent];
+const sharedModules = [HeaderModule, UserIdModule, PasswordModule];
+const materialModules = [MatButtonModule];
+
 @NgModule({
-    declarations: [SignUpComponent],
-    imports: [CommonModule, HeaderModule, UserIdModule, PasswordModule, MatButtonModule],
+    declarations: [...components],
+    imports: [CommonModule, ...sharedModules, ...materialModules],
 })
 export class SignUpModule {}

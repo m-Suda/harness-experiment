@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "harness-experiment"
+  "defaultProject": "harness-experiment",
+  "cli": {
+    "analytics": false
+  }
 }
